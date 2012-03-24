@@ -25,6 +25,7 @@ function SLLocation(name, type,route,  endDest) {
 	this.node = document.createElement("li");
 	this.node.innerHTML = "" + this.type + ", " + this.route + " mot " + this.endDest + " kliv av vid " + this.name + "";
 	
+	
 }
 var widget = document.getElementById("sl-root");
 
@@ -54,7 +55,7 @@ document.getElementsByTagName("head")[0].appendChild(css_link);
 // Eftersom SL inte har något api gör vi en simpel mockup
 
 widget.setAttribute("class", "sl-widget");
-widget.innerHTML = "<b>" + destination + "</b><br /> Från " + _location + "<br />";
+widget.innerHTML = "<img src=\"http://sl.se/ui/Images/logo.gif\" width=\"24\" /> Trafikplanerare <hr /><b>" + destination + "</b><br /> Från " + _location + "<br />";
 
 // Create a mockup of some location
 var locations = [];
@@ -69,4 +70,4 @@ for(var i = 0; i < locations.length; i++) {
 	ul.appendChild(locations[i].node);
 }
 widget.appendChild(ul);
-
+widget.innerHTML += "<hr /><a href=\"http://www.sl.se\" target=\"_blank\">Visa mer &gt;&gt;</a>";

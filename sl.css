@@ -9,12 +9,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ***/
 .sl-widget {
 	width: 320px;
-	box-radius: 8px;
-	box-shadow: 0px 1px 3px #0077ff;
+	border-radius: 3px;
+	box-shadow: 0px 1px 13px #0077ff;
 	padding:5px;
 	background-color:#FFFFFF;
 	color:black;
 	font-family: "Tahoma";
 	font-size: 11px;
 	position:absolute;
+}
+.sl-widget hr {
+	border: none;
+	border-top: 1px solid #00aaff;
+	border-bottom: none;
+}
+#sl-root a {
+	color: #0077ff;
 }
